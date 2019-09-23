@@ -1,0 +1,9 @@
+spring:
+    cloud:
+        config:
+          name: offerservice
+          fail-fast: false
+          
+eureka:
+  instance:
+    appname: offerservice
