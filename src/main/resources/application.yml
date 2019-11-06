@@ -42,19 +42,15 @@ spring:
       ddl-auto: validate
 
 management:
-  security:
-    enabled: false
   endpoints.web.exposure.include: health,info,beans,env,refresh
 server:
   port: 8100
-security:
-  basic:
-    enabled: false
     
 ---
-spring:
-  profile: cloud
 management:
-  security:
-    enabled: false
   endpoints.web.exposure.include: health,info,beans,env,refresh
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+    ip-address: 127.0.0.1
